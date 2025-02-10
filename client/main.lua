@@ -12,7 +12,6 @@ RegisterNetEvent('arc_dev:client:getVec', function(vecType)
     elseif vecType == 2 then
         vectorString = string.format("vec2(%.2f, %.2f)", coords.x, coords.y)
     else
-        print("Invalid vector type")
         return
     end
 
