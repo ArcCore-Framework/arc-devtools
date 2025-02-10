@@ -1,0 +1,5 @@
+exports.arc_core:createCommand('vec4', 'client', 'arc_dev:client:getVec', 1, 'Copy Your vec4 to clipboard.', { 4 })
+exports.arc_core:createCommand('vec3', 'client', 'arc_dev:client:getVec', 1, 'Copy Your vec3 to clipboard.', { 3 })
+exports.arc_core:createCommand('vec2', 'client', 'arc_dev:client:getVec', 1, 'Copy Your vec2 to clipboard.', { 2 })
+exports.arc_core:createCommand('heading', 'client', 'arc_dev:client:getHeading', 0, 'Copy Your heading to clipboard.')
+exports.arc_core:createCommand('tpm', 'client', 'arc_dev:client:tpm', 0, 'Teleport to waypoint.')
