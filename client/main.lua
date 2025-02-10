@@ -1,4 +1,4 @@
--- Get player coordinates and copy to clipboard
+---@param vecType number
 RegisterNetEvent('arc_dev:client:getVec', function(vecType)
     local playerPed = PlayerPedId()
     local coords = GetEntityCoords(playerPed)
@@ -20,6 +20,12 @@ RegisterNetEvent('arc_dev:client:getVec', function(vecType)
         lib.setClipboard(vectorString)
         print("Copied to clipboard:", vectorString)
     end
+end)
+
+RegisterNetEvent('arc_dev:client:getHeading', function()
+    local playerPed = PlayerPedId()
+    local heading = GetEntityHeading(playerPed)
+    lib.setClipboard(string.format("%.2f", heading))
 end)
 
 RegisterNetEvent('arc_dev:client:tpm', function()
