@@ -99,3 +99,8 @@ RegisterNetEvent('arc_dev:client:tpm', function()
         print("No valid ground found, returning to original position.")
     end
 end)
+
+
+RegisterCommand('noon', function()
+    NetworkOverrideClockTime(12, 30, 00);
+end, false)
