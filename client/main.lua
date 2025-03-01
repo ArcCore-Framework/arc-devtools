@@ -103,4 +103,5 @@ end)
 
 RegisterCommand('noon', function()
     NetworkOverrideClockTime(12, 30, 00);
+    SetWeatherTypeNowPersist('EXTRASUNNY')
 end, false)
